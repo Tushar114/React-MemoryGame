@@ -23,10 +23,6 @@ class App extends Component {
     this.initializeDeck();
   }
 
-  handleClick = (id) => {
-    this.setState({ flipped: id });
-  };
-
   initializeDeck = () => {
     Axios.get(`${DECK_OF_CARDS_API}new/draw/?count=9`).then((deckNewRes) => {
       Axios.get(
@@ -72,7 +68,7 @@ class App extends Component {
     });
   };
 
-  onCardFlip = (deckIndex, cardIndex) => {
+  onCardClick = (deckIndex, cardIndex) => {
     let decks = this.onCardFlipOP(
       this.state.decks.slice(0),
       deckIndex,
@@ -111,7 +107,7 @@ class App extends Component {
             <div className="deck">
               <Card
                 value={deck.cards[0]}
-                onClick={this.onCardFlip.bind(
+                onClick={this.onCardClick.bind(
                   null,
                   this.state.decks.indexOf(deck),
                   0
@@ -119,7 +115,7 @@ class App extends Component {
               />
               <Card
                 value={deck.cards[1]}
-                onClick={this.onCardFlip.bind(
+                onClick={this.onCardClick.bind(
                   null,
                   this.state.decks.indexOf(deck),
                   1
@@ -127,7 +123,7 @@ class App extends Component {
               />
               <Card
                 value={deck.cards[2]}
-                onClick={this.onCardFlip.bind(
+                onClick={this.onCardClick.bind(
                   null,
                   this.state.decks.indexOf(deck),
                   2
@@ -135,7 +131,7 @@ class App extends Component {
               />
               <Card
                 value={deck.cards[3]}
-                onClick={this.onCardFlip.bind(
+                onClick={this.onCardClick.bind(
                   null,
                   this.state.decks.indexOf(deck),
                   3
@@ -143,7 +139,7 @@ class App extends Component {
               />
               <Card
                 value={deck.cards[4]}
-                onClick={this.onCardFlip.bind(
+                onClick={this.onCardClick.bind(
                   null,
                   this.state.decks.indexOf(deck),
                   4
@@ -151,7 +147,7 @@ class App extends Component {
               />
               <Card
                 value={deck.cards[5]}
-                onClick={this.onCardFlip.bind(
+                onClick={this.onCardClick.bind(
                   null,
                   this.state.decks.indexOf(deck),
                   5
@@ -159,7 +155,7 @@ class App extends Component {
               />
               <Card
                 value={deck.cards[6]}
-                onClick={this.onCardFlip.bind(
+                onClick={this.onCardClick.bind(
                   null,
                   this.state.decks.indexOf(deck),
                   6
@@ -167,7 +163,7 @@ class App extends Component {
               />
               <Card
                 value={deck.cards[7]}
-                onClick={this.onCardFlip.bind(
+                onClick={this.onCardClick.bind(
                   null,
                   this.state.decks.indexOf(deck),
                   7
@@ -175,7 +171,7 @@ class App extends Component {
               />
               <Card
                 value={deck.cards[8]}
-                onClick={this.onCardFlip.bind(
+                onClick={this.onCardClick.bind(
                   null,
                   this.state.decks.indexOf(deck),
                   8

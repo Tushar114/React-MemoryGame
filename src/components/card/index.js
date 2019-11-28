@@ -11,9 +11,7 @@ const Card = (props) => {
         value.isMatched
           ? 'card-matched'
           : value.isVisible
-          ? value.isVisible
-            ? 'card-visible'
-            : 'card-wrong'
+          ? 'card-visible'
           : 'card-container-blank'
       }
       onClick={onClick}
