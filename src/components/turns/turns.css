@@ -1,0 +1,17 @@
+.move-container {
+  display: flex;
+  margin-top: 25px;
+  margin-right: 22px;
+}
+
+.move-container div {
+  margin-left: 10px;
+}
+
+.moves {
+  width: 25px;
+  border: 1px solid black;
+  height: 19px;
+  margin-left: 10px;
+  text-align: center;
+}

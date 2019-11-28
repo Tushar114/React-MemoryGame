@@ -1,29 +1,24 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import './style.css';
 
-const Card = ({
-  handleClick,
-  value,
-  backImage,
-  flipped,
-  frontImage,
-  height,
-  width,
-}) => {
+require('./style.css');
+
+const Card = (props) => {
+  const { value, onClick } = props;
+
   return (
     <div
-      className={`flip-container ${flipped ? 'flipped' : ''}`}
-      style={{ width, height }}
-      onClick={() => handleClick(value)}
+      className={
+        value.isMatched
+          ? 'card-matched'
+          : value.isVisible
+          ? value.isVisible
+            ? 'card-visible'
+            : 'card-wrong'
+          : 'card-container-blank'
+      }
+      onClick={onClick}
     >
-      <div className="flipper">
-        <img
-          style={{ width, height }}
-          className={flipped ? 'front' : 'back'}
-          src={flipped ? frontImage : backImage}
-        />
-      </div>
+      <img src={value.image} />
     </div>
   );
 };
