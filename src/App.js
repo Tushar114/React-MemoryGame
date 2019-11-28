@@ -5,7 +5,6 @@ import Axios from 'axios';
 import { DECK_OF_CARDS_API } from './constants';
 import Buttons from './components/buttons/buttons';
 import Turns from './components/turns/turns';
-
 require('./App.css');
 
 class App extends Component {
