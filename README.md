@@ -12,32 +12,16 @@ User will click on play and he will get two deck of cards with noumber of cards 
 
 Components ->
 
-1. App Component -> Smart Component
+1. App Component ->
    a. Header
    b. Deck Of Cards
-   c. LeaderBoard - Dynamic Component
 
-2. Card Component -> Dumb Component
+2. Card Component ->
    -- Only for rendering
-
-Services -
-
-1. Call to get 1st Deck of Cards - Successful
-2. Call to get 2nd Deck of Shuffled Cards - Successful
 
 External tools used
 
 API : 'https://deckofcardsapi.com/'
-
-Funtionality Completed -
-
-- UI of application
-- Data from getchars API and getalphabet API
-- Partial Logic
-
-Functionality Reamining -
-
-- Flip/Matching service is facing some issue.
 
 To start the application you can now run: `npm start`
 
