@@ -2,8 +2,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 This is a very simple Memory Game. This is currently in development, Please find introduced and pending features in description below.
 
-This application is being developed using Node/React/Redux technologies.
-
 Author - Tushar Shyoran
 
 ## Flow of the game -
