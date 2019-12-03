@@ -7,13 +7,7 @@ const Card = (props) => {
 
   return (
     <div
-      className={
-        value.isMatched
-          ? 'card-matched'
-          : value.isVisible
-          ? 'card-visible'
-          : 'card-container-blank'
-      }
+      className={value.isVisible ? 'card-visible' : 'card-container-blank'}
       onClick={onClick}
     >
       <img src={value.image} />

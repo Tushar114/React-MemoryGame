@@ -21,9 +21,9 @@ External tools used
 
 API : 'https://deckofcardsapi.com/'
 
-To start the application you can now run: `npm start`
+To start the application you can now run: `npm run dev`
 
 ## Available commands
 
 - `npm build` Bundle the application
-- `npm start` Run the development environment
+- `npm run dev` Run the development environment
